@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<ol class='open_scores third'>
+		<li>No Results</li>
+	</ol>
+	<ol class='masters_scores third'>
+		<li>No Results</li>
+	</ol>
+	<ol class='grandmasters_scores third'>
+		<li>No Results</li>
+	</ol>
+	<form id="info">
+		<label id="entry" rows=5 columns=33>Entrants</label>
+		<br/>
+		<input type="text" id="results">
+		<br>
+		<input type="radio" class="age" id="open" name="age">
+		<label for="open" value="open">Open</label>
+		<input type="radio" class="age" id="masters" name="age">
+		<label for="masters" value="masters">Masters</label>
+		<input type="radio" class="age" id="grandmasters" name="age">
+		<label for="grandmasters" value="grand_masters">Grandmasters</label>
+		<br/>
+		<input type="checkbox" id="champs">
+		<label for="checkbox" value ="champs" id="champcheck">Team Champs</label>
+		<br/>
+		<button type="submit">submit</button>
+
+	</form>
+	<button id="clear">Clear All</button>
+</body>
+	<script type="text/javascript" src="scripts.js"></script>
+</html>
