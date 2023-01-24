@@ -1,0 +1,13 @@
+.result-container {
+    flex: 1;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: 8px;
+    background-color: rgb(224, 224, 224);
+    width: 20%
+}
