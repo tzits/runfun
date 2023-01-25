@@ -2,8 +2,36 @@
 	display: flex;
 	flex-direction: row;
     justify-content: flex-start;
+    padding-top: 50px;
 }
 
 .results {
-    width: 48%
+    width: 40%;
+}
+
+.runnerCard {
+    text-decoration: none;
+}
+
+.card-container {
+  background: rgba(255, 255, 255, 0.7);
+  width: 41.5%;
+  margin-left: 4%;
+}
+
+.results-header {
+display: flex;
+justify-content: flex-start;
+background-color: white;
+opacity: .7;
+width: 29.5%;
+margin-left: 4%;
+margin-bottom: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+padding-left: 12%;
+margin-top: 0px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
 }
