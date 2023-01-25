@@ -1,13 +1,14 @@
 .result-container {
     flex: 1;
-    margin: 3px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 4%
 }
 
 .card {
     padding: 8px;
-    background-color: rgb(224, 224, 224);
-    width: 20%
+    text-decoration: none;
+    color: black;
+    text-align: left;
 }
