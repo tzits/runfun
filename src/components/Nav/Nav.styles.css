@@ -4,10 +4,21 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    z-index:10;
   }
   
-  .cool > li > a {
-    color: yellow;
+.top {
+    display: flex;
+    background-color: black;
+    margin-bottom: 20px;
+    position: relvative;
+    z-index:10;
+    padding: 15px 0px;
+}
+
+  .cool > span > li > a {
+    color: white;
     text-decoration: none;
     font-size: 20px;
     background: rgba(0,0,0,0.2);
@@ -15,17 +26,26 @@ nav ul {
     display: inline-block;
     margin: 20px;
     border-radius: 5px;
+    z-index:10;
   }
   
-  .cool > li {
+  .left > li {
     position: relative;
     display: flex;
     justify-content: center;
+    align-content: 'space-between';
   }
   
+  .cool-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   nav {
     position: relative;
     perspective: 600px;
+    /* z-index:10; */
   }
   
   .dropdown {
@@ -39,6 +59,7 @@ nav ul {
     transform: translateY(100px);
     will-change: opacity;
     display: none;
+    /* z-index:10; */
   }
   
   .trigger-enter .dropdown {
@@ -61,6 +82,7 @@ nav ul {
     display: flex;
     justify-content: center;
     opacity: 0;
+    z-index:10;
   }
   
   .dropdownBackground.open {
@@ -84,4 +106,63 @@ nav ul {
     padding: 10px 0;
     display: block;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+
+  .uncool-list {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    padding: 6px 20px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+  .cool-list {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .link:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .result-link:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  .result-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .left {
+    display: flex;
+    font-size: 22px;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  .header-link:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  .header-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding-top: 6px;
   }
