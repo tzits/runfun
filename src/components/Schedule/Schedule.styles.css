@@ -1,0 +1,13 @@
+.schedule {
+    width: 46%;
+    height: fit-content;
+    background-color: white;
+    opacity: .7;
+    border-radius: 15px;
+    padding: 8px;
+    padding-left: 15px;
+}
+
+th {
+    text-align: left;
+}

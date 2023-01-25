@@ -1,0 +1,17 @@
+td {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.race, .date, .distance {
+    padding-right: 40px;
+}
+
+.location {
+    padding-right: 15px;
+}
+
+.link > a:visited {
+    color: black;
+
+}
