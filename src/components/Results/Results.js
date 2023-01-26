@@ -10,7 +10,7 @@ const Results = ({team}) => {
   return (
     <div className='results-schedule-container'>
       <div className='results'>
-          <h4 className='results-header'>Team Points</h4>
+          <div className='results-header'>Team Points</div>
           <div className='card-container'>
           {
             testData[team].sort((a,b) => a.score < b.score).map((runner) => 
