@@ -1,17 +1,27 @@
 import React from 'react'
-import './Race.styles.css'
+import Schedule from '../Schedule/Schedule'
+import RunnerCard from '../RunnerCard/RunnerCard'
+import './Results.styles.css'
+import { startingResults } from '../../utils/data'
 
-
-const Race = ({race}) => {
-    return (
-        <tr>
-            <td className='name'>{race.name}</td>
-            <td className='date'>{race.date}</td>
-            <td className='distance'>{race.distance}</td>
-            <td className='location'>{race.location}</td>
-            <td className='link'><a href={race.registrationLink} target="_blank">Click Here</a></td>
-        </tr>
-    )
+const Results = ({team}) => {
+  let testData = startingResults
+  
+  return (
+    <div className='results-schedule-container'>
+      <div className='results'>
+          <div className='results-header'>Team Points</div>
+          <div className='card-container'>
+          {
+            testData[team].sort((a,b) => a.score < b.score).map((runner) => 
+              <a className='runnerCard' href='#'><RunnerCard dataPoint={runner} /></a>
+            )
+          }
+          </div>
+      </div>
+      <Schedule />
+    </div>
+  )
 }
 
-export default Race
+export default Results
