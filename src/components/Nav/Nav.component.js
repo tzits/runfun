@@ -51,7 +51,7 @@ class Nav extends Component {
         return (
         
             <div>
-                <nav>
+                <Nav>
 
                     <div className='top'>
                         <div className="dropdownBackground">
@@ -66,17 +66,17 @@ class Nav extends Component {
                                 <li className='cool-list'>                
                                 <a className='header-link' href='#'>Men</a>
                                     <ul className='dropdown men'>
-                                    <li><Link className='result-link' to='/men'>Open</Link></li>
-                                    <li><Link className='result-link' to='/mmen'>Masters</Link></li>
-                                    <li><Link className='result-link' to='/gmen'>Grandmasters</Link></li>
+                                        <li><Link className='result-link' to='/men'>Open</Link></li>
+                                        <li><Link className='result-link' to='/mmen'>Masters</Link></li>
+                                        <li><Link className='result-link' to='/gmen'>Grandmasters</Link></li>
                                     </ul>
                                 </li>
                                 <li className='cool-list'>
                                     <a className='header-link' href='#'>Women</a>                   
                                     <ul className='dropdown men'>
-                                    <li><Link className='result-link' to='/women'>Open</Link></li>
-                                    <li><Link className='result-link' to='/mwomen'>Masters</Link></li>
-                                    <li><Link className='result-link' to='/gwomen'>Grandmasters</Link></li>
+                                        <li><Link className='result-link' to='/women'>Open</Link></li>
+                                        <li><Link className='result-link' to='/mwomen'>Masters</Link></li>
+                                        <li><Link className='result-link' to='/gwomen'>Grandmasters</Link></li>
                                     </ul>
                                 </li>
                             </span>
@@ -87,17 +87,20 @@ class Nav extends Component {
                             </span>
                         </ul>
                     </div>
-
+                </Nav>
+                <span className='scores'>
                     <Routes>
                         <Route path='/' element={<Entry />} />
                         <Route path='/men' element={<Results team={'men'} />} />
                         <Route path='/mmen' element={<Results team={'mmen'} />} />
                         <Route path='/women' element={<Results team={'women'}/>} />
-                        <Route path='/mwomen' element={<Results team={'masters_women'}/>} />
+                        <Route path='/mwomen' element={<Results team={'mwomen'}/>} />
                         <Route path='/gmen' element={<Results team={'gmen'}/>} />
-                        <Route path='/gwomen' element={<Results team={'grandmasters_women'}/>} />
+                        <Route path='/gwomen' element={<Results team={'gwomen'}/>} />
                     </Routes>
-                </nav>
+                </span>
+
+
             </div>
         )
     }
