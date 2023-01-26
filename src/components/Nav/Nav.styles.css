@@ -28,6 +28,10 @@ nav ul {
     border-radius: 5px;
     z-index:10;
   }
+
+  .scores {
+    position:unset;
+  }
   
   .left > li {
     position: relative;
@@ -59,7 +63,6 @@ nav ul {
     transform: translateY(100px);
     will-change: opacity;
     display: none;
-    /* z-index:10; */
   }
   
   .trigger-enter .dropdown {
@@ -82,7 +85,7 @@ nav ul {
     display: flex;
     justify-content: center;
     opacity: 0;
-    z-index:10;
+    z-index: 10;
   }
   
   .dropdownBackground.open {
@@ -166,3 +169,9 @@ nav ul {
     color: white;
     padding-top: 6px;
   }
+
+  /* @media screen and (max-width: 600px) {
+    .dropdownBackground, .cool-container {
+      display: none;
+    }
+  } */
