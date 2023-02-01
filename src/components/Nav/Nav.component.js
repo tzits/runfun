@@ -5,7 +5,6 @@ import {
     Link,
   } from 'react-router-dom'
 import Results from '../Results/Results'
-import Entry from '../Entry'
 import './Nav.styles.css'
 
 class Nav extends Component {
@@ -89,7 +88,7 @@ class Nav extends Component {
                     </div>
 
                     <Routes>
-                        <Route path='/' element={<Entry />} />
+                        <Route path='/' element={<Results team={'men' />} />
                         <Route path='/men' element={<Results team={'men'} />} />
                         <Route path='/mmen' element={<Results team={'mmen'} />} />
                         <Route path='/women' element={<Results team={'women'}/>} />
