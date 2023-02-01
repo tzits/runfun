@@ -47,8 +47,7 @@ class Nav extends Component {
     }
 
     render() {
-        return (
-        
+        return (       
             <div>
                 <nav>
 
@@ -56,7 +55,6 @@ class Nav extends Component {
                         <div className="dropdownBackground">
                             <span className='arrow'></span>
                         </div>
-
                         <ul className='cool-container'>
                             <span className='cool left'>
                                 <li className='uncool-list'>
